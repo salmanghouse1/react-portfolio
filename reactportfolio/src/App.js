@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Contact from "./components/content/Contact";
 import Portfolio from "./components/content/Portfolio";
+import Resume from "./components/content/Resume";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <Contact></Contact>
         {/* Portfolio Page Component */}
         <Portfolio></Portfolio>
+        {/* Resume page component */}
+        <Resume></Resume>
+        {/* add a footer page component bellow */}
       </section>
     </div>
   );
