@@ -6,8 +6,14 @@ const categories = [
     description:
       "Photos of grocery stores, food trucks, and other commercial projects",
   },
-  { name: "Contact", description: "Portraits of people in my life" },
-  { name: "Portfolio", description: "Delicious delicacies" },
+  {
+    name: "Contact",
+    description: "Portraits of people in my life",
+  },
+  {
+    name: "Portfolio",
+    description: "Delicious delicacies",
+  },
   {
     name: "Resume",
     description: "Fields, farmhouses, waterfalls, and the beauty of nature",
@@ -17,13 +23,13 @@ const categories = [
 function Nav() {
   return (
     <header class="topnav">
-      <h1>Salman Ghouse</h1>
+      <h1> Salman Ghouse </h1>{" "}
       <nav>
         <div id="myLinks">
           <ul>
             {categories.map((category) => (
               <li>
-                <a className="mx-1" key={category.name}>
+                <a href="#" className="mx-1" key={category.name}>
                   {category.name}
                 </a>
               </li>
