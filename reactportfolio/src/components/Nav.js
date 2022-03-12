@@ -28,8 +28,13 @@ function Nav() {
         <div id="myLinks">
           <ul>
             {categories.map((category) => (
-              <li>
-                <a href="#" className="mx-1" key={category.name}>
+              <li className={currentPage === category.name ? "nav-link active" : "nav-link"}>
+                <a
+                  href="#"
+                  className="mx-1"
+                  onClick={() => handlePageChange(category.name)}
+                  key={category.name}
+                >
                   {category.name}
                 </a>
               </li>

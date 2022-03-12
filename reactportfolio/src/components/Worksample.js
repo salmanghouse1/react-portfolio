@@ -5,11 +5,11 @@ function Worksample() {
     //   Work Sample props need to be passed in and viewed
     // One Work Sample
     <div class="work-sample">
-      <div class="card" id="card">
+      <div class="card" id="card" style={props.img}>
         <div class="upper"></div>
         <div class="text">
-          <h2>News App</h2>
-          <p>News for Tourists</p>
+          <h2>{props.title}</h2>
+          <p>{props.description}</p>
           <p>HTML, CSS, Javascript,Jquery,Tailwind</p>
           <a href="https://github.com/salmanghouse1/global-news-finder">
             Github
