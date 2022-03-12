@@ -6,7 +6,7 @@ const WorkSamples = [
     title: "About Me",
     description:
       "Photos of grocery stores, food trucks, and other commercial projects",
-    img: "background:path;",
+    imgstyle: "background:path;",
   },
   {
     title: "About Me",
