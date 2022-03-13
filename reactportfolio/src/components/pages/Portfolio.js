@@ -7,7 +7,7 @@ function Portfolio() {
       description: "Search Car Data",
       technology: "HTML,CSS,JS,Node,Express,Sequelize,Handlebars",
       githubUrl: "https://github.com/salmanghouse1/Project_2_Group_5/tree/main",
-      DeployURL: "https://still-reef-50696.herokuapp.com/",
+      deployUrl: "https://still-reef-50696.herokuapp.com/",
     },
     {
       title: "News App",
@@ -15,7 +15,7 @@ function Portfolio() {
 
       technology: "HTML,CSS,JS",
       githubUrl: "https://github.com/salmanghouse1/global-news-finder",
-      url: "https://salmanghouse1.github.io/global-news-finder/",
+      deployUrl: "https://salmanghouse1.github.io/global-news-finder/",
     },
 
     {
@@ -30,14 +30,14 @@ function Portfolio() {
         "Photos of grocery stores, food trucks, and other commercial projects",
       technology: "HTML, CSS, Javascript,Lottie",
       githubUrl: "",
-      deployURL: "https://salmanwebdeveloper.com/port4.0/",
+      deployUrl: "https://salmanwebdeveloper.com/port4.0/",
     },
     {
       title: "Quiz",
       description: "A timed and scored coding quiz",
       technology: "HTML, CSS, JS",
       githubUrl: "https://github.com/salmanghouse1/web-dev-skills-quiz",
-      deployURL: "https://salmanghouse1.github.io/web-dev-skills-quiz/",
+      deployUrl: "https://salmanghouse1.github.io/web-dev-skills-quiz/",
     },
     {
       title: "Favourite Heroes",
@@ -49,13 +49,13 @@ function Portfolio() {
       title: "Port 3.0",
       description: "Single Page portfolio",
       technology: "HTML,CSS",
-      deployURL: "https://salmanwebdeveloper.com/Salman3.0/",
+      deployUrl: "https://salmanwebdeveloper.com/Salman3.0/",
     },
     {
       title: "Best Anime Toys",
       description: "Toys Anime",
       technology: "HTML, CSS, Wordpress",
-      deployURL: "https://www.bestanimetoys.com",
+      deployUrl: "https://www.bestanimetoys.com",
     },
     {
       title: "Best Web Developer",
@@ -65,13 +65,13 @@ function Portfolio() {
     {
       title: "Jewelry And Handbags",
       description: "Ecommerce Handbags And Jewelry",
-      deployURL: "https://www.jewelryandhandbags.com",
+      deployUrl: "https://www.jewelryandhandbags.com",
       technology: "HTML, CSS, Wordpress",
     },
     {
       title: "3T Solutions Inc",
       description: "Company Website",
-      deployURL: "https://www.3tsolutionsinc.com",
+      deployUrl: "https://www.3tsolutionsinc.com",
       technology: "HTML, CSS, JS, JQuery, Bootstrap",
     },
     {
@@ -108,13 +108,13 @@ function Portfolio() {
       title: "Port 4.0",
       description: "My Portfolio 4.0 version",
       technology: "HTML,CSS,JS,Lottie",
-      deployURL: "./port4.0",
+      deployUrl: "./port4.0",
     },
     {
       title: "3x3 Battleship",
       description: "3x3 Battleship Game",
       technology: "HTML, CSS, JS",
-      deployURL: "./bship",
+      deployUrl: "./bship",
     },
   ];
 
@@ -126,14 +126,10 @@ function Portfolio() {
           <div className="text">
             <h2>{WorkSample.title}</h2>
             <p>{WorkSample.description}</p>
-            <p>HTML, CSS, Javascript,Jquery,Tailwind{WorkSample.img}</p>
-            <a href="https://github.com/salmanghouse1/global-news-finder">
-              Github
-            </a>
+            <p>{WorkSample.technology}</p>
+            <a href={WorkSample.githubUrl}>Github</a>
             <br />
-            <a href="https://salmanghouse1.github.io/global-news-finder/">
-              URL
-            </a>
+            <a href={WorkSample.deployUrl}>URL</a>
           </div>
         </div>
       </div>
