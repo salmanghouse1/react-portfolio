@@ -6,6 +6,7 @@ import Resume from "./pages/Resume";
 import Nav from "./Nav";
 import Hero from "./Hero";
 import Home from "./pages/Home";
+import Footer from "./Footer";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -36,6 +37,7 @@ export default function PortfolioContainer() {
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       <Hero />
       <section className="flex">{renderPage()}</section>
+      <Footer />
     </div>
   );
 }

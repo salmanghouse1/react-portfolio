@@ -6,7 +6,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.job-title{
 
+}
+h2 span span {
+color: black;
+position: relative;
+font-size:18px;
+bottom: -1em;
+opacity: 0;
+animation: move-text 0.75s forwards;
+}
+@keyframes move-text {
+0% {
+bottom: -0.2em;
+opacity: 0;
+}
+
+50% {
+bottom: 0.2em;
+opacity:1;
+}
+
+100% {
+bottom: 0;
+opacity: 1;
+}
+}
         * {
             padding: 0;
             margin: 0;
@@ -29,7 +55,7 @@ code {
             scroll-behavior: smooth;
         }
         
-        .occupation::after {
+        .job-title::after {
             content: "";
             position: absolute;
             height: 30px;

@@ -1,4 +1,5 @@
 import React from "react";
+import SplitText from "./SplitText";
 
 function Hero() {
   return (
@@ -14,7 +15,10 @@ function Hero() {
       </a>
       <img className="avatar" src="../images/Avatar.jpg" alt="Salman Ghouse" />
       <h2>
-        I am a&nbsp;<span id="occupation" className="occupation"></span>
+        I am a&nbsp;
+        <span class="job-title">
+          <SplitText copy="Full Stack Developer" role="heading" />
+        </span>
       </h2>
     </section>
   );
