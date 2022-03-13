@@ -3,96 +3,118 @@ import React from "react";
 function Portfolio() {
   const WorkSamples = [
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Car Inventory App",
+      description: "Search Car Data",
+      technology: "HTML,CSS,JS,Node,Express,Sequelize,Handlebars",
+      githubUrl: "https://github.com/salmanghouse1/Project_2_Group_5/tree/main",
+      DeployURL: "https://still-reef-50696.herokuapp.com/",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "News App",
+      description: "Select a country get the news",
+
+      technology: "HTML,CSS,JS",
+      githubUrl: "https://github.com/salmanghouse1/global-news-finder",
+      url: "https://salmanghouse1.github.io/global-news-finder/",
+    },
+
+    {
+      title: "Budget tracker",
+      description: "Tracks your transactions in graph",
+      githubUrl: "https://github.com/salmanghouse1/budget-tracker",
+      deployUrl: "https://tranquil-dawn-47998.herokuapp.com/",
     },
     {
-      title: "About Me",
+      title: "Astro-Portfolio",
       description:
         "Photos of grocery stores, food trucks, and other commercial projects",
+      technology: "HTML, CSS, Javascript,Lottie",
+      githubUrl: "",
+      deployURL: "https://salmanwebdeveloper.com/port4.0/",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Quiz",
+      description: "A timed and scored coding quiz",
+      technology: "HTML, CSS, JS",
+      githubUrl: "https://github.com/salmanghouse1/web-dev-skills-quiz",
+      deployURL: "https://salmanghouse1.github.io/web-dev-skills-quiz/",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Favourite Heroes",
+      description: "Slideable Scrollable Fan Fav Heroes",
+      technology: "HTML, CSS, JS, JQuery",
+      deployUrl: "https://salmanwebdeveloper.com/Heroes/Fav%20heros/",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Port 3.0",
+      description: "Single Page portfolio",
+      technology: "HTML,CSS",
+      deployURL: "https://salmanwebdeveloper.com/Salman3.0/",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Best Anime Toys",
+      description: "Toys Anime",
+      technology: "HTML, CSS, Wordpress",
+      deployURL: "https://www.bestanimetoys.com",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Best Web Developer",
+      description: "Website",
+      technology: "HTML, CSS, JS, Wordpress",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Jewelry And Handbags",
+      description: "Ecommerce Handbags And Jewelry",
+      deployURL: "https://www.jewelryandhandbags.com",
+      technology: "HTML, CSS, Wordpress",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "3T Solutions Inc",
+      description: "Company Website",
+      deployURL: "https://www.3tsolutionsinc.com",
+      technology: "HTML, CSS, JS, JQuery, Bootstrap",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Fat Loss Innovation",
+      description: "Weight Loss Product Landing Page",
+      deployUrl: "https://www.fatlossinnovation.com",
+      technology: "HTML,CSS.JS, Wordpress",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Box Generator",
+      description: "Generates A Box Based on your size and color preference",
+      deployUrl: "",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Thazkira",
+      description: "Ramadan Reminders",
+      technology: "HTML, CSS, JS, Wordpress",
+      deployUrl: "https://www.thazkira.work",
+    },
+
+    {
+      title: "Our Madurai Charity",
+      description: "Charity Website",
+      technology: "HTML CSS, JS, Wordpress",
+      deployUrl: "https://www.ourmaduraicharity.ca",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Nature By NH",
+      description: "Naturopathy Service Website",
+      technology: "HTML CSS, JS, Wordpress",
+      deployUrl: "https://www.naturebynh.com",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
+      title: "Port 4.0",
+      description: "My Portfolio 4.0 version",
+      technology: "HTML,CSS,JS,Lottie",
+      deployURL: "./port4.0",
     },
     {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
-    },
-    {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
-      img: "background:url(./images/work-sample-16.png)",
-    },
-    {
-      title: "About Me",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
-      img: "background:url(./images/work-sample-17.png)",
+      title: "3x3 Battleship",
+      description: "3x3 Battleship Game",
+      technology: "HTML, CSS, JS",
+      deployURL: "./bship",
     },
   ];
 
