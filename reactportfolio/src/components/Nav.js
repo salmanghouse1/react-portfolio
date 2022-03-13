@@ -1,13 +1,19 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Nav({ currentPage, handlePageChange }) {
   return (
     <header className="topnav">
       <h1>Salman Ghouse</h1>
-      <nav>
-        <div id="myLinks">
-          <ul className="nav nav-tabs">
-            <li className="nav-item">
+      <nav id="myLinks" class="navbar">
+        <ul className="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">
+            &#9776;
+          </label>
+          <div className="menu">
+            <li>
               <a
                 href="#home"
                 onClick={() => handlePageChange("Home")}
@@ -49,8 +55,6 @@ function Nav({ currentPage, handlePageChange }) {
             <li className="nav-item">
               <a
                 href="#resume"
-                //  TODO: Add a comment explaining what this logic is doing
-
                 onClick={() => handlePageChange("Resume")}
                 className={
                   currentPage === "Resume" ? "nav-link active" : "nav-link"
@@ -59,12 +63,9 @@ function Nav({ currentPage, handlePageChange }) {
                 Resume
               </a>
             </li>
-
             <li className="nav-item">
               <a
                 href="#contact"
-                //  TODO: Add a comment explaining what this logic is doing
-
                 onClick={() => handlePageChange("Contact")}
                 className={
                   currentPage === "Contact" ? "nav-link active" : "nav-link"
@@ -73,8 +74,8 @@ function Nav({ currentPage, handlePageChange }) {
                 Contact
               </a>
             </li>
-          </ul>
-        </div>
+          </div>
+        </ul>
       </nav>
     </header>
   );
