@@ -1,6 +1,6 @@
 import React from "react";
 
-function About() {
+function Home() {
   return (
     <article className="about-me" id="aboutMe">
       <h3 className="heading-block">About Me</h3>
@@ -22,51 +22,51 @@ function About() {
       <div className="status-bars">
         <div className="status-bar">
           <p>HTML</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
 
         <div className="status-bar">
           <p>CSS</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
 
         <div className="status-bar">
           <p>Javascript</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
         <div className="status-bar">
           <p>Bootstrap</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
         <div className="status-bar">
           <p>Tailwind</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
         <div className="status-bar">
           <p>JQuery</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
 
         <div className="status-bar">
           <p>React</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
 
         <div className="status-bar">
           <p>Node</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
         <div className="status-bar">
           <p>Sequelize</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
         <div className="status-bar">
           <p>Express</p>
-          <div id="myBar" className="status-bar-fill"></div>
+          <div id="myBar" className="status-bar-fill" Style="width:100%"></div>
         </div>
       </div>
     </article>
   );
 }
 
-export default About;
+export default Home;

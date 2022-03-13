@@ -1,49 +1,80 @@
 import React from "react";
 
-const categories = [
-  {
-    name: "About Me",
-    description:
-      "Photos of grocery stores, food trucks, and other commercial projects",
-  },
-  {
-    name: "Contact",
-    description: "Portraits of people in my life",
-  },
-  {
-    name: "Portfolio",
-    description: "Delicious delicacies",
-  },
-  {
-    name: "Resume",
-    description: "Fields, farmhouses, waterfalls, and the beauty of nature",
-  },
-];
-
-function Nav() {
+function Nav({ currentPage, handlePageChange }) {
   return (
-    <header class="topnav">
-      <h1> Salman Ghouse </h1>{" "}
+    <header className="topnav">
+      <h1>Salman Ghouse</h1>
       <nav>
         <div id="myLinks">
-          <ul>
-            {categories.map((category) => (
-              <li className={currentPage === category.name ? "nav-link active" : "nav-link"}>
-                <a
-                  href="#"
-                  className="mx-1"
-                  onClick={() => handlePageChange(category.name)}
-                  key={category.name}
-                >
-                  {category.name}
-                </a>
-              </li>
-            ))}
+          <ul className="nav nav-tabs">
+            <li className="nav-item">
+              <a
+                href="#home"
+                onClick={() => handlePageChange("Home")}
+                //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
+
+                className={
+                  currentPage === "Home" ? "nav-link active" : "nav-link"
+                }
+              >
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#about"
+                onClick={() => handlePageChange("About")}
+                //  TODO: Add a comment explaining what this logic is doing
+
+                className={
+                  currentPage === "About" ? "nav-link active" : "nav-link"
+                }
+              >
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#portfolio"
+                onClick={() => handlePageChange("Portfolio")}
+                //  TODO: Add a comment explaining what this logic is doing
+
+                className={
+                  currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+                }
+              >
+                Portfolio
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#resume"
+                //  TODO: Add a comment explaining what this logic is doing
+
+                onClick={() => handlePageChange("Resume")}
+                className={
+                  currentPage === "Resume" ? "nav-link active" : "nav-link"
+                }
+              >
+                Resume
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a
+                href="#contact"
+                //  TODO: Add a comment explaining what this logic is doing
+
+                onClick={() => handlePageChange("Contact")}
+                className={
+                  currentPage === "Contact" ? "nav-link active" : "nav-link"
+                }
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
       </nav>
     </header>
   );

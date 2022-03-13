@@ -2,8 +2,8 @@ import React from "react";
 
 function Contact() {
   return (
-    <section>
-      <h1>Contact</h1>
+    <section className="flex">
+      <h1 className="heading-block">Contact</h1>
       <form>
         <label>
           username

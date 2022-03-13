@@ -1,13 +1,13 @@
 import React from "react";
 
-function Worksample() {
+function Worksample(props) {
   return (
     //   Work Sample props need to be passed in and viewed
     // One Work Sample
-    <div class="work-sample">
-      <div class="card" id="card" style={props.img}>
-        <div class="upper"></div>
-        <div class="text">
+    <div className="work-sample">
+      <div className="card" id="card" style={props.img}>
+        <div className="upper"></div>
+        <div className="text">
           <h2>{props.title}</h2>
           <p>{props.description}</p>
           <p>HTML, CSS, Javascript,Jquery,Tailwind</p>
