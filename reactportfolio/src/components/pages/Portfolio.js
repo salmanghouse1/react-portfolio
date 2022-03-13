@@ -120,7 +120,7 @@ function Portfolio() {
 
   return (
     <section className="flex" id="portfolio">
-      <h1 className="heading-block">Portfolio</h1>
+      <h3 className="heading-block">Portfolio</h3>
 
       <div className="work-samples">
         {/* work sample needs to be mapped and WorkSample need to be passed in */}
