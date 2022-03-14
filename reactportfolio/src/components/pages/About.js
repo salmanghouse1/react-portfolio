@@ -20,6 +20,8 @@ function About() {
         </p>
       </div>
       <div className="status-bars">
+        <img className="avatar-about" src={require("../../images/Avatar.jpg")} alt="Salman Ghouse" />
+
         <div className="status-bar">
           <p>HTML</p>
           <div id="myBar" className="status-bar-fill"></div>

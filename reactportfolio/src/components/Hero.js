@@ -3,7 +3,6 @@ import SplitText from "./SplitText";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import Avatar from "../images/Avatar.jpg";
 
 function Hero() {
   return (

@@ -107,6 +107,8 @@ opacity: 1;
         }
         /* cellphone media query */
  @media (max-width:426px) {
+
+
              :root {
                 --header-color-from-left-text-bg: #333846;
                 --header-color-from-left-bg-text: rgb(24, 199, 176);
@@ -142,7 +144,13 @@ input[type=checkbox]:checked ~ .menu{
 }
 .hamburger {
  display: block;
-}            
+}   
+
+.avatar-about{
+    max-width:100%;
+    width:100%;
+    display:block;
+}
             
             .work-samples {
                 display: flex;
@@ -314,6 +322,7 @@ input[type=checkbox]:checked ~ .menu{
                 height: 100px;
                 border-radius: 50%
             }
+            
             .subheading h2 {
                 background-color: var(--header-color-from-left-bg-text);
                 height: 50px;
@@ -524,7 +533,11 @@ input[type=checkbox]:checked ~ .menu{
             }
             
             
-            
+            .avatar-about{
+    max-width:100%;
+    width:100%;
+    display:block;
+}
             
             .heading-block {
                 font-family: 'Fredericka the Great', cursive!important;
