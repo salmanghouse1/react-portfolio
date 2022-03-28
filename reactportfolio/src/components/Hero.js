@@ -3,11 +3,12 @@ import SplitText from "./SplitText";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import ResumeFile from "../assets/Full Stack Developer Resume 2022-03-27.pdf";
 
 function Hero() {
   return (
     <section className="subheading">
-      <a href="Full-Stack-Engineer-Resume-2022-02-07.pdf">
+      <a href={ResumeFile}>
         <FontAwesomeIcon className="icon" icon={faDownload} />
       </a>
       <a href="https://github.com/salmanghouse1">

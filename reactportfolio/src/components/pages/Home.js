@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeFile from "../../assets/Full Stack Developer Resume 2022-03-27.pdf";
 
 function Home() {
   return (
