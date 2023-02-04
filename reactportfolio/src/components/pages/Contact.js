@@ -28,19 +28,6 @@ const Contact = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <section className="flex">
-      <h1 className="heading-block">Contact</h1>
-      <ul>
-        <li>
-          <span>Name:</span>Salman Ghouse
-        </li>
-        <li>
-          <span>Email:</span>salmanghouse1@gmail.com
-        </li>
-      </ul>
-    </section>
-=======
       <div>
     <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
@@ -52,7 +39,6 @@ const Contact = () => {
         <input type="submit" value="Send" />
       </form>
     </div>
->>>>>>> develop
   );
 };
 
