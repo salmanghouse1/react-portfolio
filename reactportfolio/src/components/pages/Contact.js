@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
-import * as dotenv from 'dotenv' 
-dotenv.config()
+
 
 const Contact = () => {
   const form = useRef();
@@ -12,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.USER_ID
+        process.env.REACT_APP_API_KEY_ID
       )
       .then(
         (result) => {
@@ -29,8 +28,8 @@ const Contact = () => {
   };
 
   return (
-    <StyledContactForm>
-      <form ref={form} onSubmit={sendEmail}>
+      <div>
+    <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>
@@ -39,7 +38,7 @@ const Contact = () => {
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>
-    </StyledContactForm>
+    </div>
   );
 };
 
